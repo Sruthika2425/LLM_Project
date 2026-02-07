@@ -71,42 +71,11 @@ Database
 
 SQLite
 
-Project Structure
-final_proj/
-│
-├── data/
-│   ├── raw/
-│   │   └── data.csv
-│   └── processed/
-│       └── enterprise_intelligence.db
-│
-├── ingestion/
-│   └── ingest_to_sqlite.py
-│
-├── langchain_layer/
-│   ├── agent/
-│   ├── chains/
-│   │   ├── customer_chain.py
-│   │   └── finance_chain.py
-│   ├── db/
-│   │   ├── connection.py
-│   │   ├── schemas.py
-│   │   └── sql_tools.py
-│   ├── intent/
-│   │   └── intent_chain.py
-│   └── orchestration/
-│       └── main_chain.py
-│
-├── llm/
-├── main.py
-├── run.py
-├── requirements.txt
-├── pyproject.toml
-└── README.md
+
 
 Installation & Setup
 1️⃣ Clone the Repository
-git clone https://github.com/your-username/langchain-enterprise-ai-system.git
+git clone 
 
 2️⃣ Navigate to Project Directory
 cd final_proj
@@ -161,3 +130,4 @@ Artificial Intelligence and Machine Learning
 GitHub: https://github.com/Sruthika2425
 
 Email: jayasruthika.sb@gmail.com
+
