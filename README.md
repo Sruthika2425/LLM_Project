@@ -52,29 +52,112 @@ This project solves that problem by allowing business users to:
 
 ---
 
-## 🏗️ System Architecture
+Tech Stack
+Frontend
 
-```mermaid
-flowchart TD
+Streamlit
 
-U[User Interface<br/>Streamlit UI]
-U --> Q[Natural Language Query]
+Backend
 
-Q --> O[LangChain Orchestration Layer]
+Python
 
-O --> I[Intent Detection Chain]
-I -->|Customer Intent| C[Customer Chain]
-I -->|Finance Intent| F[Finance Chain]
+AI Framework
 
-C --> T[SQL Tools]
-F --> T
+LangChain
 
-T --> DB[(Enterprise Intelligence DB<br/>SQLite)]
+Large Language Models (LLMs via API)
 
-DB --> T
-T --> O
+Database
 
-O --> LLM[LLM Reasoning Engine]
-LLM --> R[Final Business Decision]
+SQLite
 
-R --> U
+Project Structure
+final_proj/
+│
+├── data/
+│   ├── raw/
+│   │   └── data.csv
+│   └── processed/
+│       └── enterprise_intelligence.db
+│
+├── ingestion/
+│   └── ingest_to_sqlite.py
+│
+├── langchain_layer/
+│   ├── agent/
+│   ├── chains/
+│   │   ├── customer_chain.py
+│   │   └── finance_chain.py
+│   ├── db/
+│   │   ├── connection.py
+│   │   ├── schemas.py
+│   │   └── sql_tools.py
+│   ├── intent/
+│   │   └── intent_chain.py
+│   └── orchestration/
+│       └── main_chain.py
+│
+├── llm/
+├── main.py
+├── run.py
+├── requirements.txt
+├── pyproject.toml
+└── README.md
+
+Installation & Setup
+1️⃣ Clone the Repository
+git clone https://github.com/your-username/langchain-enterprise-ai-system.git
+
+2️⃣ Navigate to Project Directory
+cd final_proj
+
+3️⃣ Create Virtual Environment
+python -m venv .venv
+source .venv/bin/activate   # Windows: .venv\Scripts\activate
+
+4️⃣ Install Dependencies
+pip install -r requirements.txt
+
+5️⃣ Run the Application
+streamlit run run.py
+
+Future Enhancements
+
+Real-time database integration
+
+Advanced churn prediction models
+
+Role-based access control
+
+REST API deployment
+
+Dashboard analytics and reporting
+
+Learning Outcomes
+
+Practical understanding of LangChain architecture
+
+Tool-based LLM reasoning
+
+Enterprise data + AI integration
+
+Modular AI system design
+
+Natural language driven analytics
+
+🤝 Contributing
+
+Contributions are welcome.
+Fork the repository and submit a pull request for improvements or enhancements.
+
+📜 License
+
+This project is licensed under the MIT License.
+
+👩‍💻 Author
+
+Jaya Sruthika
+Artificial Intelligence and Machine Learning
+GitHub: https://github.com/Sruthika2425
+
+Email: jayasruthika.sb@gmail.com
