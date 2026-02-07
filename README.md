@@ -126,8 +126,11 @@ This project is licensed under the MIT License.
 👩‍💻 Author
 
 Jaya Sruthika
+
 Artificial Intelligence and Machine Learning
+
 GitHub: https://github.com/Sruthika2425
 
 Email: jayasruthika.sb@gmail.com
+
 
